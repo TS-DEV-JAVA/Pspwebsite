@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PSP & PS Vita Converter</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      width: 95%;
+      max-width: 1300px;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      position: relative;
+      min-height: 1200px;
+    }
+
+    .main-content {
+      flex: 1;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .main-image {
+      max-width: 800px;
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 35px;
+      align-items: center;
+    }
+
+    .buttons button {
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      width: 240px;
+      transition: all 0.3s ease;
+    }
+
+    .buttons button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    #discordBtn { background-color: #5b73ca; }
+    #downloadBtn { background-color: #1ce30b; }
+    #howToBtn { background-color: #ff0000; }
+    #powershellBtn { background-color: #000000; }
+
+    .description {
+      text-align: left;
+      margin-top: 30px;
+      max-height: 400px;
+      overflow-y: auto;
+      padding-right: 12px;
+    }
+
+    .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      width: 140px;
+    }
+
+    .side-images img {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .left-side {
+      position: relative;
+    }
+
+    .left-label,
+    .right-label {
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .description::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .description::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Left: Compatible With -->
+    <div class="left-side">
+      <div class="left-label">Compatible With</div>
+      <div class="side-images">
+        <img src="https://i.ibb.co/k2YHKqjB/pngwing-com-6-1.png" alt="Compatible Device 1">
+        <img src="https://i.ibb.co/Y49MTH42/pngwing-com-7-1.png" alt="Compatible Device 2">
+      </div>
+    </div>
+
+    <!-- Center Main Content -->
+    <div class="main-content">
+      <h1>Download PSP/PS Vita Converter Made By TS (plz dont @) !</h1>
+      <img class="main-image" src="https://i.ibb.co/6JBC8KV9/Screenshot-2025-06-13-213540.png" alt="Converter Preview">
+      <div class="buttons">
+        <a id="downloadLink" href="https://cold-eu-agl-1.gofile.io/download/web/d57d89f0-80f7-4c58-9acd-b0007c91ee02/PS_vita%26psp_coverter_2025.rar" download style="text-decoration:none;">
+          <button id="downloadBtn" onclick="showThankYou()">Download Tool</button>
+        </a>
+        <button id="discordBtn" onclick="window.open('https://discord.com/invite/s4KYckEHdz', '_blank')">Join Discord</button>
+        <button id="howToBtn" onclick="window.open('https://i.ibb.co/B2hvMy7j/Screenshot-2025-06-13-231532.jpg', '_blank')">How To Run</button>
+        <button id="powershellBtn" onclick="window.open('https://gofile.io/d/EwLFHr', '_blank')">Download PowerShell</button>
+      </div>
+      <div class="description">
+        🎬 <b>PSP & PS Vita Video Converter – Full Project Summary</b><br><br>
+        The PSP & PS Vita Video Converter is a powerful and user-friendly desktop tool designed to convert today’s video formats into perfectly compatible files for Sony’s iconic handheld systems — the PlayStation Portable (PSP) and PlayStation Vita.<br><br>
+        🚀 <b>Built for Simplicity and Speed</b><br>
+        This converter is made for convenience. You simply choose a video, select your target device (PSP or PS Vita), and the software handles the rest — from adjusting resolution and encoding to ensuring compatibility.<br><br>
+        🎮 <b>Fully Optimized for PSP and Vita</b><br>
+        Videos are converted with the exact specifications required by each console. PSP videos are resized and encoded at 368x208 using the correct MP4 format.<br><br>
+        🔊 <b>No Internet Needed, No Limits</b><br>
+        The converter is completely offline and requires no internet connection or online activation.<br><br>
+        📁 <b>Smart File Handling</b><br>
+        The app automatically prepares videos with PSP/Vita-friendly filenames and folder structures.<br><br>
+        🎯 <b>Real Use Cases</b><br>
+        Watch entire seasons, convert YouTube clips, or load educational content.<br><br>
+        💬 <b>Final Thoughts</b><br>
+        The PSP & PS Vita Video Converter brings modern media compatibility to two of Sony’s most beloved handheld consoles. Just clear, smooth video that’s ready to go wherever you are.
+      </div>
+    </div>
+
+    <!-- Right Side Images: Collab With -->
+    <div class="side-images">
+      <div class="right-label">Advised/Made By </div>
+      <img src="https://cdn.discordapp.com/avatars/727520625157079110/f9fc0919060eac7ae787c95e51ba5c02.png?size=4096" alt="Branding 1">
+      <img src="https://cdn.discordapp.com/avatars/1346951182135857174/e46066f86115438df6d95a74f8154d23.png?size=4096" alt="Branding 2">
+    </div>
+
+  </div>
+
+  <script>
+    function showThankYou() {
+      setTimeout(() => {
+        alert('Thank You For Downloading My Tool !');
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
