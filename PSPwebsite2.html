@@ -9,6 +9,7 @@
             text-align: center;
             background-color: #f3f3f3;
             padding: 50px;
+            overflow-x: hidden;
         }
 
         h1 {
@@ -32,23 +33,43 @@
             border-radius: 6px;
             text-decoration: none;
             color: white;
-            transition: background-color 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlideUp 1s forwards;
         }
 
-        .download-btn {
-            background-color: #27ae60;
+        .button:nth-of-type(1) { animation-delay: 0.2s; }
+        .button:nth-of-type(2) { animation-delay: 0.3s; }
+        .button:nth-of-type(3) { animation-delay: 0.4s; }
+        .button:nth-of-type(4) { animation-delay: 0.5s; }
+
+        .button:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
         }
 
-        .download-btn:hover {
-            background-color: #219150;
+        .download-btn { background-color: #27ae60; }
+        .download-btn:hover { background-color: #219150; }
+
+        .discord-btn { background-color: #5865F2; }
+        .discord-btn:hover { background-color: #4853cc; }
+
+        .howto-btn { background-color: #e67e22; }
+        .howto-btn:hover { background-color: #cf6a1d; }
+
+        .powershell-btn {
+            background-color: #000000;
+            color: white;
+        }
+        .powershell-btn:hover {
+            background-color: #222222;
         }
 
-        .discord-btn {
-            background-color: #5865F2;
-        }
-
-        .discord-btn:hover {
-            background-color: #4853cc;
+        @keyframes fadeSlideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .credits-section {
@@ -66,8 +87,9 @@
         }
 
         .credits-item img {
-            max-width: 200px;
-            height: auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 0 8px rgba(0,0,0,0.1);
         }
@@ -99,7 +121,7 @@
 </head>
 <body>
 
-    <h1>Download PSP/PS Vita Converter For Free in 2025</h1>
+    <h1>Download PSP/PS Vita Converter For Free in 2025 Made By TS (plz dont @) </h1>
     
     <img class="main-preview" src="https://cdn.discordapp.com/attachments/1382841674908045406/1383153453030834176/Screenshot_2025-06-13_213540.png?ex=684dc188&is=684c7008&hm=89eacd0b7db4a6116db2e70b8b3b8df4073d160264bee7c150717124e26df36f&" 
          alt="PSP/PS Vita Converter Preview">
@@ -114,6 +136,14 @@
         Join Our Discord
     </a>
 
+    <a class="button howto-btn" href="https://cdn.discordapp.com/attachments/1379761217035305072/1383352986436374538/Screenshot_2025-06-13_231532.jpg?ex=684e7b5d&is=684d29dd&hm=731e07840a9ab378942101a01d4938215281e00cbb2fe191fa97d55f35f0d34f&" target="_blank">
+        How To Run
+    </a>
+
+    <a class="button powershell-btn" href="https://gofile.io/d/EwLFHr" target="_blank">
+        Download PowerShell
+    </a>
+
     <!-- Credits Section -->
     <div class="credits-section">
         <div class="credits-item">
@@ -121,7 +151,7 @@
             <p>Advised By</p>
         </div>
         <div class="credits-item">
-            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExenRibHV5OWF3c29hbmkxd2I2eDcybDY0Yjg3cDc5aW5ud3liOTAzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4FstiVgv0ws66D2U/giphy.gif" alt="Made By">
+            <img src="https://cdn.discordapp.com/avatars/1346951182135857174/ca094a4f17f8392e48266011d77a79d4.png?size=4096" alt="Made By">
             <p>Made By</p>
         </div>
     </div>
